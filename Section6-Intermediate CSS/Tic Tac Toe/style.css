@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+}
+
+table {
+  margin: auto;
+}
+
+.middleH {
+  border-bottom: solid black 2px;
+  border-top: solid black 2px;
+  width: 50px;
+  padding: 50px;
+}
+
+.middleV {
+  border-right: solid black 2px;
+  border-left: solid black 2px;
+  width: 50px;
+  padding: 50px;
+}
