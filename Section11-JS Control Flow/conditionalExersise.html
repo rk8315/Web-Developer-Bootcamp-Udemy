@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Conditional Exersise</title>
+  <script>
+    var age = prompt("What is your age?");
+
+    if(age < 0){
+      console.log("Error: you cannot be a negative age");
+    } else if(age == 21) {
+      console.log("Happy 21st birthday!!");
+      console.log("Your age is odd");
+    } else if(age % 2 != 0 && age != 21){
+      console.log("your age is odd!");
+    } else if(age % Math.sqrt(age) == 0){
+      console.log("perfect square!");
+    }
+  
+  </script>
+</head>
+<body>
+  <h1>The Conditional Exersise</h1>
+</body>
+</html>
