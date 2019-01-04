@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>For Loops Problem Set</title>
+</head>
+<body>
+  <h1>For Loops Problem Set</h1>
+  <ol>
+    <li>Print all numbers between -10 and 19</li>
+    <li>Print all even numbers between 10 and 40</li>
+    <li>Print all odd numbers between 300 and 333</li>
+    <li>Print all numbers divisible by 5 AND 3 between 5 and 50</li>
+  </ol>
+  <script>
+    // Problem 1
+    console.log("PROBLEM 1: Print all numbers between -10 and 19");
+    for(var i = -10; i < 20; i++){
+      console.log(i)
+    }
+    
+    // Problem 2
+    console.log("PROBLEM 2: Print all even numbers between 10 and 40");
+    for(var i = 10; i < 41; i+= 2){
+      console.log(i)
+    }
+      
+    // Problem 3
+    console.log("PROBLEM 3: Print all odd numbers between 300 and 333");
+    for(var i = 301; i < 334; i+=2){
+      console.log(i);
+    }
+    
+    // Problem 4
+    console.log("PROBLEM 4: Print all numbers divisible by 5 AND 3 between 5 and 50");
+    for(var i = 5; i < 51; i++){
+      if(i % 3 == 0 && i % 5 == 0){
+        console.log(i);
+      }
+    }
+  
+  
+  </script>
+</body>
+</html>
