@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Array Problem Set</title>
+</head>
+<body>
+  <h1>Array Problem Set</h1>
+  <h3>Check console for output</h3>
+
+  <script>
+    var myArray = [1, 2, 8, 3, 4, 5, 6, 7];    
+    console.log("Problem #1") 
+    // Write a function printReverse() that takes an array as an argument and prints out the elements in the array in reverse order (don't actually reverse the array itself)
+    function printReverse(arr){
+      for(var i = arr.length - 1; i >= 0; i--){
+        console.log(arr[i]);
+      }
+    }
+    printReverse(myArray);
+    console.log("==========")
+
+    console.log("Problem #2")
+    // write a function isUniform() which takes an array as an argument and returns true if all elements in the array are identical. Hint: store first element in a variable and compare that to all other elements
+    function isUniform(arg){
+      var firstVal = arg[0];
+      for(var i = 1; i < arg.length; i++){
+        if(arg[i] !== firstVal){
+          return false;
+        } 
+        return true;
+      }
+    }
+    isUniform(myArray);
+
+    console.log("==========")
+
+    // Problem #3
+    // write a function sumArray() that accepts an array of numbers and returns the sum of all numbers in the array. Hint: create a variable to hold onto the sum.
+    console.log("Problem #3") 
+
+    function sumArray(arr){
+      var arrSum = 0;
+      arr.forEach(function(element){
+        arrSum += element;
+      });
+      console.log(arrSum); 
+    }
+    sumArray(myArray);
+
+    console.log("==========")
+
+    // Problem #4
+    // Write a function max() that accepts an array of numbers and returns the maximum number in the array. Hint: use loop, checking if new element is larger than element stored in a variable.
+    console.log("Problem #4") 
+
+    function max(arr){
+      var maxValue = arr[0];
+      for(var i = 1; i < arr.length; i++){
+        if(arr[i] > maxValue){
+          maxValue = arr[i];
+        }
+      }
+      console.log(maxValue);
+    }
+    max(myArray);
+
+    console.log("==========")
+  
+  </script>
+</body>
+</html>
